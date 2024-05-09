@@ -53,7 +53,7 @@ function BotSpecs({ bot }) {
             <button
               className="ui button fluid"
               onClick={() =>
-                console.log("connect this to a function that shows all bots")
+                bot.back()
               }
             >
               Go Back
@@ -61,9 +61,7 @@ function BotSpecs({ bot }) {
             <button
               className="ui button fluid"
               onClick={() =>
-                console.log(
-                  "connect this to a function that adds this bot to your bot army list"
-                )
+                bot.enlist(bot.bot)
               }
             >
               Enlist
